@@ -1,12 +1,29 @@
 * {
   box-sizing: border-box;
+  
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0 0vw 0 -5vw; 
+  padding: 0 -5vw 0vw -5vw;
+  font-family: 'IBM Plex Sans', sans-serif;
   line-height: 1.5;
+  overflow-x: hidden;
+  background: url("../images/laptop.jpeg");
+  background-repeat: none;
+  background-size: cover;
+}
+
+
+.glass-container{
+  background: rgba(214, 217, 237, 0.59);
+  border-radius: 10rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.9px);
+  -webkit-backdrop-filter: blur(10.9px);
+  border: 1px solid rgba(214, 217, 237, 1);
+  opacity: 0.8;
+  margin: 10vh -5vw -10vh 0vw;
 }
 
 h1,
@@ -20,4 +37,328 @@ h6 {
 
 p {
   margin: 0;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+header > h1 {
+  display: flex;
+  justify-content: center;
+  margin: 2vh 0vh 0vh 25vw;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: rgba(214, 217, 237, 1);
+}
+
+header > nav {
+  display: flex;
+}
+
+header > nav > ul{
+
+}
+
+header > nav > ul > li {
+
+}
+
+.navbar-custom{
+  background: rgba(214, 217, 237, 0.59);
+  border-radius: 10rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.9px);
+  -webkit-backdrop-filter: blur(10.9px);
+  border: 1px solid rgba(214, 217, 237, 1);
+  opacity: 0.8;
+}
+
+.hero-banner{
+  margin: 0vw 0vw 2vh 0vw;
+  padding: 0vw 0vw 0vw 0vw;
+  width: 100%;
+  /* From https://css.glass */
+background: rgba(185, 55, 179, 0.54);
+border-radius: 50px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(15.3px);
+-webkit-backdrop-filter: blur(15.3px);
+border: 0.5vh solid rgba(185, 55, 179, 0.3);
+}
+
+.hero-banner > div > h2 {
+  margin: 0vh 0vh 0vh 5vw;
+  position: relative;
+  top: 1vh;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: rgba(214, 217, 237, 1);
+
+  
+}
+
+#about{
+  margin: 0vw 5vw 0vw 7.75vw;
+  display: grid;
+  grid-template-columns: 30vw 30vw 30vw;
+  grid-template-rows: 1fr 1fr 1fr ;
+  grid-template-areas: 
+  "First Fifth Fourth"
+  "Third Second Sixth"
+  ;
+  column-gap: 2vw;
+  row-gap: 2vh;
+
+}
+
+#about > h2 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: rgba(17, 35, 153, 0.918);
+
+
+
+}
+
+#about > p {
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: rgba(214, 217, 237, 1);
+
+
+
+}
+#First{
+  grid-area: First;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1; 
+  grid-row-end: 1;
+  border: 5px 5px 5px 5px;
+  border-style: solid;
+  /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+#Second{
+  grid-area: Second;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  /* From https://css.glass */
+background: rgba(63, 123, 171, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(63, 123, 171, 0.7);
+
+}
+
+#Third {
+  grid-area: Third;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 2;
+/* From https://css.glass */
+background: rgba(68, 28, 67, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(68, 28, 67, 0.7);
+}
+
+#Fourth{
+  grid-area: Fourth;
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  /* From https://css.glass */
+background: rgba(37, 144, 28, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(37, 144, 28, 0.7);
+
+}
+#Fifth{
+  grid-area: Fifth;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  /* From https://css.glass */
+background: rgba(226, 42, 185, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(226, 42, 185, 0.7);
+
+}
+
+#Sixth{
+
+  grid-area: Sixth;
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 2;
+ /* From https://css.glass */
+background: rgba(220, 12, 12, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(220, 12, 12, 0.7);
+
+
+}
+
+#work{
+  margin: 0vw 0vw 0vw 0vw;
+  padding: 0vw 0vw 0vw 4vw;
+  display: grid;
+  grid-template-columns: 30vw 30vw 30vw ;
+  grid-template-rows: 20vh 20vh 20vh 20vh ;
+  grid-template-areas: 
+  "Title Title Next1"
+  "Screen Screen Next2"
+  "Screen Screen Next3"
+  "Screen Screen Next4"
+  ;
+}
+
+
+#work > h2 {
+  list-style-type: circle ;
+  font-family: 'IBM Plex Sans', sans-serif;
+  grid-area: Title;
+  display: flex;
+  justify-content: center;
+  font-size: 18vh;
+
+  
+
+}
+
+
+
+#work > #Screen {
+  grid-area: Screen;
+  background-color: blueviolet;
+  border-radius: -5vh;
+  border: 5px dashed rgba(159, 186, 72, 0.7);
+  background-image: url;
+}
+
+#work > #Screen > .arr{
+  width: 50px;
+  height: 50px;
+  border: 5em solid green;
+  border: 5em;
+  position: relative;
+  margin: 55vh 0vw 0vh 28vw;
+}
+
+#work > #Next1 {
+  grid-area: Next1;
+  background-color: green;
+  border-radius: 5vh;
+  border: 5px dashed rgba(159, 186, 72, 0.7);
+
+}
+
+
+#work > #Next2 {
+  grid-area: Next2;
+  background-color: blanchedalmond;
+  border-radius: 5vh;
+  border: 5px dashed rgba(159, 186, 72, 0.7);
+
+}
+#work > #Next3{
+  grid-area: Next3;
+  background-color: aquamarine;
+  border-radius: 5vh;
+  border: 5px dashed rgba(159, 186, 72, 0.7);
+}
+
+#work > #Next4 {
+  grid-area: Next4;
+  background-color: brown;
+  border-radius: 5vh;
+  border: 5px dashed rgba(159, 186, 72, 0.7);
+}
+
+#work > article {
+
+  
+}
+
+#work > 
+
+#work > article > a {
+  
+
+}
+
+
+#contact {
+  margin: 3vh 15vw 0vw 4vw;
+  padding: 0vw 0vw 0vw 4vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:flex-end;
+  font-family: 'IBM Plex Sans', sans-serif;
+
+  
+  
+}
+
+#contact > h2 {
+
+
+}
+
+#contact > ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr ;
+  grid-template-areas: 
+  "Phone Email Github"
+  ;
+  
+  list-style: none;
+}
+
+#contact > ul > li {
+  list-style: none;
+  font-family: 'IBM Plex Sans', sans-serif;
+
+
+}
+
+
+
+#Phone {
+  grid-area: Phone;
+
+}
+
+#Email {
+  grid-area: Email;
+}
+
+#Github{
+  grid-area: Github;
 }
