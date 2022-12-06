@@ -13,10 +13,10 @@ let Screen3 = document.getElementById("Next3")
 let n1num = 0, n2num = 1, n3num = 2, n4num = 3
 
 Scree.href = links[n1num]
-Scree.style.backgroundImage = "url('../images/Next1.jpg')"
-Screen1.style.backgroundImage = "url('../images/Next2.jpg')"
-Screen2.style.backgroundImage = "url('../images/Next3.jpg')"
-Screen3.style.backgroundImage = "url('../images/Next4.jpg')"
+Scree.style.backgroundImage = "url('./images/Next1.jpg')"
+Screen1.style.backgroundImage = "url('./images/Next2.jpg')"
+Screen2.style.backgroundImage = "url('./images/Next3.jpg')"
+Screen3.style.backgroundImage = "url('./images/Next4.jpg')"
 let screennumber = 1
 let Desc = document.getElementById("Desc")
 
@@ -76,9 +76,9 @@ function UpClick(){
     n2num++
     n3num++
     n4num++
-    sc1image = '../images/' + screens[n1num] + '.jpg'
-    sc2image = '../images/' + screens[n2num] + '.jpg'
-    sc3image = '../images/' + screens[n3num] + '.jpg'
+    sc1image = './images/' + screens[n1num] + '.jpg'
+    sc2image = './images/' + screens[n2num] + '.jpg'
+    sc3image = './images/' + screens[n3num] + '.jpg'
 
 
 
@@ -122,9 +122,9 @@ Down.addEventListener("click", function(){
     n2num--
     n3num--
     n4num--
-    sc1image = '/images/' + screens[n1num] + '.jpg'
-    sc2image = '/images/' + screens[n2num] + '.jpg'
-    sc3image = '/images/' + screens[n3num] + '.jpg'
+    sc1image = './images/' + screens[n1num] + '.jpg'
+    sc2image = './images/' + screens[n2num] + '.jpg'
+    sc3image = './images/' + screens[n3num] + '.jpg'
 
 
 
