@@ -3,15 +3,17 @@
   
 }
 
+
+
 body {
-  margin: 0 0vw 0 -5vw; 
-  padding: 0 -5vw 0vw -5vw;
-  font-family: 'IBM Plex Sans', sans-serif;
+  margin: 0 0vw 0 0vw; 
+  padding: 0 0vw 0vw 0vw;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   line-height: 1.5;
-  overflow-x: hidden;
-  background-image: url("../images/02-portfolio-2.jpg");
+  background-image: url("../images/blacktabletop.jpeg");
   background-repeat: none;
   background-size: cover;
+  overflow: scroll;
 }
 
 
@@ -23,7 +25,8 @@ body {
   -webkit-backdrop-filter: blur(10.9px);
   border: 1px solid rgb(10, 19, 77);
   opacity: 0.8;
-  margin: 10vh -5vw -10vh 2vw;
+  margin: 10vh 0vw 10vh 0vw;
+
 }
 
 h1,
@@ -46,27 +49,36 @@ header{
   justify-content: space-around;
 
 }
-header > h1 {
+
+header > .header-container {
+  background: rgba(214, 217, 237, 0.59);
+  border-radius: 10rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.9px);
+  -webkit-backdrop-filter: blur(10.9px);
+  border: 1px solid rgb(10, 19, 77);
+  opacity: 0.8;
+  margin: 0vh 0vw -10vh 0vw;
+  width: 100vw;
+
+}
+header > .header-container > h1 {
   display: flex;
   justify-content: center;
-  margin: 2vh 0vh 0vh 25vw;
-  font-family: 'IBM Plex Sans', sans-serif;
+  margin: 2vh 0vh 0vh -10vw;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: rgba(214, 217, 237, 1);
   font-size: 4rem;
   font-weight: 100;
+  text-decoration: dashed;
+  text-shadow: #000;
 }
 
 header > nav {
   display: flex;
+  
 }
 
-header > nav > ul{
-
-}
-
-header > nav > ul > li {
-
-}
 
 .navbar-custom{
   background: rgba(214, 217, 237, 0.59);
@@ -76,6 +88,7 @@ header > nav > ul > li {
   -webkit-backdrop-filter: blur(10.9px);
   border: 1px solid rgba(214, 217, 237, 1);
   opacity: 0.8;
+  margin-left: 60vw;
 }
 
 .hero-banner{
@@ -95,7 +108,7 @@ border: 0.5vh solid rgba(185, 55, 179, 0.3); */
   margin: 0vh 0vh 0vh 5vw;
   position: relative;
   top: 1vh;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: rgba(214, 217, 237, 1);
   font-size: 6vh;
   text-shadow: 12rem;
@@ -106,29 +119,26 @@ border: 0.5vh solid rgba(185, 55, 179, 0.3); */
 }
 
 #about{
-  margin: 0vw 0vw 0vw 0vw;
+  margin: 0vw 0vw 15vh 2vw;
   display: inline-grid;
-  grid-template-columns: 30vw 30vw 30vw;
-  grid-template-rows: 10vh 10vh 10vh ;
+  grid-template-columns: 100vw;
+  grid-template-rows: 20vh 30vh;
   grid-template-areas: 
-  "First Fifth Fourth"
-  "Third Second Sixth"
+  "First "
+  "Second "
   ;
-  column-gap: 8vw;
-  row-gap: 8vh;
+
+
 
 }
 
 #about > h2 {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: rgba(17, 35, 153, 0.918);
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 8vh;
-
-
-
 }
 
 /* #about > p {
@@ -142,117 +152,43 @@ border: 0.5vh solid rgba(185, 55, 179, 0.3); */
   grid-column-end: 1;
   grid-row-start: 1; 
   grid-row-end: 1;
-  border: 5px 5px 5px 5px;
-  border-style: solid;
+ 
   /* From https://css.glass */
 background: rgba(255, 255, 255, 0.2);
-border-radius: 16px;
+border-radius: 5em 5em 5em 5em;
+width: fit-content;
+margin-left: 35vw;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5px);
 -webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
+border: 5px solid rgba(255, 255, 255, 0.3);
 display:inline-block;
+font-weight: bolder;
+color: white;
+text-shadow: 1px 1px #fff;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
+
 #Second{
   grid-area: Second;
-  grid-column-start: 2;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 2;
-  /* From https://css.glass */
-background: rgba(63, 123, 171, 0.2);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(63, 123, 171, 0.7);
-display:inline-block;
-height: fit-content;
-
-
-}
-
-#Third {
-  grid-area: Third;
   grid-column-start: 1;
   grid-column-end: 1;
   grid-row-start: 2;
   grid-row-end: 2;
-/* From https://css.glass */
-background: rgba(68, 28, 67, 0.2);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(68, 28, 67, 0.7);
-display:inline-block;
-height: fit-content;
-font-size: 3vh;
-height: fit-content;
-
-}
-
-#Fourth{
-  grid-area: Fourth;
-  grid-column-start: 3;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 1;
   /* From https://css.glass */
-background: rgba(37, 144, 28, 0.2);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(37, 144, 28, 0.7);
+
+font-weight: bolder;
+color: white;
+text-shadow: 1px 1px #fff;
 display:inline-block;
-font-size: 3vh;
-height: fit-content;
-
-
-}
-#Fifth{
-  grid-area: Fifth;
-  grid-column-start: 2;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 1;
-  /* From https://css.glass */
-background: rgba(226, 42, 185, 0.2);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(226, 42, 185, 0.7);
-display:inline-block;
-font-size: 3vh;
-height: fit-content;
-
-
-
+width: fit-content;
+font-size: 1.5rem;
+padding: 0vh 5vw 0vh 5vw;
 
 }
 
-#Sixth{
 
-  grid-area: Sixth;
-  grid-column-start: 3;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 2;
- /* From https://css.glass */
-background: rgba(220, 12, 12, 0.2);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(220, 12, 12, 0.7);
-display:inline-block;
-font-size: 3vh;
-
-
-}
 
 #work{
   margin: 0vw 0vw 0vw 0vw;
@@ -261,7 +197,7 @@ font-size: 3vh;
   grid-template-columns: 30vw 30vw 30vw ;
   grid-template-rows: 20vh 20vh 20vh 20vh ;
   grid-template-areas: 
-  "Title Title Title"
+  "Title Title Desc"
   "Screen Screen Next1"
   "Screen Screen Next2"
   "Screen Screen Next3"
@@ -277,8 +213,18 @@ font-size: 3vh;
   justify-content: center;
   font-size: 18vh;
 
-  
+}
 
+#work > #Desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px dotted green;
+  border-radius: 2em;
+  color: black;
+  text-shadow: 2px 2px #fff;
+  height: max-content;
+  margin-top: 5vh;
 }
 
 
@@ -410,3 +356,199 @@ font-size: 3vh;
 #Github{
   grid-area: Github;
 }
+
+
+@media screen and (max-device-width: 400px), screen and (device-width: 400px){
+  html {
+    overflow: hidden;
+  }
+
+  body{
+    overflow: scroll;
+  }
+  body::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+  header{
+    width: 100vw;
+  }
+  header >.header-container > h1{
+    font-size: 4vh;
+    margin-right: 5vw;
+  }
+  html{
+    overflow-y: auto;
+  }
+
+  #about{
+    margin: 0vw 0vw -15vh 2vw;
+    display: inline-grid;
+    grid-template-columns: 30vw;
+    grid-template-rows: 20vh 20vh 20vh 20vh 20vh 20vh ;
+    grid-template-areas: 
+    "First"
+    "Second"
+    "Third"
+    "Fourth"
+    "Fifth"
+    "Sixth"
+    ;
+    height: fit-content;
+  }
+
+  #First{
+    grid-area: First;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1; 
+    grid-row-end: 1;
+    width: fit-content;
+    display: flex;
+    border-radius: 5em 5em 1em 1em ;
+    margin-left: 18vw;
+  }
+  #Second{
+    grid-area: Second;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2; 
+    grid-row-end: 2;
+    width: 100vw;
+    margin-left: 0vw;
+
+  }
+
+  #work {
+  margin: 0vw 0vw 0vw 0vw;
+  padding: 0vw 0vw 0vw 4vw;
+  display: grid;
+  grid-template-columns: 60vw 30vw ;
+  grid-template-rows: 20vh 20vh 20vh 20vh ;
+  grid-template-areas: 
+  "Title Title "
+  "Screen  Next1"
+  "Screen  Next2"
+  "Screen  Next3"
+  "Desc Desc"
+  ;
+}
+
+#work > #Next{
+  margin-left: -40vw;
+
+}
+#work > h2 {
+  list-style-type: circle ;
+  font-family: 'IBM Plex Sans', sans-serif;
+  grid-area: Title;
+  display: flex;
+  justify-content: center;
+  font-size: 12vh;
+  margin-top: 5vh;
+
+}
+
+#work > #Desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px dotted green;
+  border-radius: 2em;
+  color: black;
+  text-shadow: 2px 2px #fff;
+  height: max-content;
+  margin-left: 25vw;
+
+  
+}
+
+
+
+#work > #Screen {
+  grid-area: Screen;
+  border-radius: -5vh;
+  border: 5px dashed rgba(159, 186, 72, 0.7);
+  background-size: cover;
+}
+
+
+#work > .arr{
+  width: 20vw;
+  height: 5vh;
+  border: 5em solid red;
+  border: 5em;
+  border-radius: 2em;
+  display: inline-block;
+  margin: 0vh 0vh 0ch 18vw;
+ 
+}
+
+#work > #Next1 {
+  grid-area: Next1;
+  background-color: green;
+  border-radius: 5vh;
+  border: 5px dashed rgba(159, 186, 72, 0.7);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+
+}
+
+#work > #Next1 > #up{
+  height: 5vh;
+  width: fit-content;
+  margin: -2vh 0vw 0vh 0vw ;
+  border: 2px solid red;
+  border-radius: 5em;
+
+}
+
+#work > #Next2 {
+  grid-area: Next2;
+  background-color: blanchedalmond;
+  border-radius: 5vh;
+  border: 5px dashed rgba(159, 186, 72, 0.7);
+  background-size: cover;
+
+}
+#work > #Next3{
+  grid-area: Next3;
+  background-color: aquamarine;
+  border-radius: 5vh;
+  border: 5px dashed rgba(159, 186, 72, 0.7);
+  background-size: cover;
+
+}
+
+
+
+#work > #Next3 > #down {
+  margin: 17vh 0px 0px 11vw;  
+  border: 2px solid red;
+  border-radius: 5em;
+  width: fit-content;
+
+}
+
+  
+
+
+}
+
+@media screen and (max-device-width: 768px ), screen and (device-width: 768px) {
+  
+}
+
+@media screen and (max-device-width: 912px ), screen and (device-width: 912px) {
+  
+}
+

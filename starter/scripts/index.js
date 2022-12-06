@@ -17,10 +17,22 @@ Screen1.style.backgroundImage = "url('/starter/images/Next2.jpg')"
 Screen2.style.backgroundImage = "url('/starter/images/Next3.jpg')"
 Screen3.style.backgroundImage = "url('/starter/images/Next4.jpg')"
 let screennumber = 1
+let Desc = document.getElementById("Desc")
+
+let descriptions = ["Github is a cloud based repository that helps developers store, manage, track and control changes to their code. This is my github repository",
+                    "jamellknows.io is my official github landing page, check it out for other developments I make outside of frontend development ",
+                    "The module 1 challenge page displays the first website I made as part of the edEx bootcamp",
+                    "The CII website is the official page for a small start up I am running in artificial intelligence",
+                    "THe millenium prize solutions is a webpage I made dedicated to displaying my solutions to the millenium prize problems "
+]
+
+
+Desc.innerText = descriptions[n1num]
 ScreenButton.addEventListener("click", function(){
     scimage = '/starter/images/' + screens[n1num] + '.jpg'
     Scree.style.backgroundImage = `url(${scimage})`
     Scree.href = links[n1num]
+    Desc.innerText = descriptions[n1num]
     UpClick()
 
 
@@ -83,19 +95,19 @@ Down.addEventListener("click", function(){
     }
     if(n1num == 0)
     {
-        n1num = 7
+        n1num = 4
     }
     if(n2num== 0)
     {
-        n2num = 7
+        n2num = 4
     }
     if(n3num == 0)
     {
-        n3num = 1
+        n3num = 4
     }
     if(n4num== 0)
     {
-        n4num = 7
+        n4num = 4
     }
     n1num--
     n2num--
