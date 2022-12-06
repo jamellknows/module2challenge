@@ -168,6 +168,7 @@ color: white;
 text-shadow: 1px 1px #fff;
 font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
+
 }
 
 #Second{
@@ -357,6 +358,46 @@ padding: 0vh 5vw 0vh 5vw;
   grid-area: Github;
 }
 
+@media screen and (max-device-width: 320px), screen and (device-width: 320px){
+  #about{
+    margin: 0vw 0vw -15vh 2vw;
+    display: inline-grid;
+    grid-template-columns: 30vw;
+    grid-template-rows: 20vh 20vh 20vh 20vh 20vh 20vh ;
+    grid-template-areas: 
+    "First"
+    "Second"
+  
+    ;
+    height: fit-content;
+    width: fit-content;
+  }
+
+  #First{
+    grid-area: First;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1; 
+    grid-row-end: 1;
+    width: fit-content;
+    display: flex;
+    border-radius: 5em 5em 1em 1em ;
+    margin-left: 18vw;
+    color: red;
+  }
+  #Second{
+    grid-area: Second;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2; 
+    grid-row-end: 2;
+    width: 100vw;
+    font-size: 3vh;
+   
+  }
+
+}
+
 
 @media screen and (max-device-width: 400px), screen and (device-width: 400px){
   html {
@@ -544,11 +585,33 @@ body::-webkit-scrollbar-thumb {
 
 }
 
-@media screen and (max-device-width: 768px ), screen and (device-width: 768px) {
+@media screen and (max-device-width: 768px), screen and (device-width: 768px) {
+
+  #work > #Desc{
+    height: fit-content;
+    width: fit-content;
+    margin: 0vh 0vh -5vh -20vw;
+  }
   
 }
 
 @media screen and (max-device-width: 912px ), screen and (device-width: 912px) {
+  #about > #First {
+    margin-left: 20vw;
+  }
+
+  #work > #Desc{
+    margin-left: 10vw;
+  }
+
+  #work > #Next1 > #up{
+    margin-top: -1vh;
+    width: 15vw;
+  }
+  #work > #Next3 > #down {
+   width: 15vw;
+   margin-left: 5.5vw;
   
+  }
 }
 
