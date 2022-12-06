@@ -13,10 +13,10 @@ let Screen3 = document.getElementById("Next3")
 let n1num = 0, n2num = 1, n3num = 2, n4num = 3
 
 Scree.href = links[n1num]
-Scree.style.backgroundImage = "url('/images/Next1.jpg')"
-Screen1.style.backgroundImage = "url('/images/Next2.jpg')"
-Screen2.style.backgroundImage = "url('/images/Next3.jpg')"
-Screen3.style.backgroundImage = "url('/images/Next4.jpg')"
+Scree.style.backgroundImage = "url('../images/Next1.jpg')"
+Screen1.style.backgroundImage = "url('../images/Next2.jpg')"
+Screen2.style.backgroundImage = "url('../images/Next3.jpg')"
+Screen3.style.backgroundImage = "url('../images/Next4.jpg')"
 let screennumber = 1
 let Desc = document.getElementById("Desc")
 
@@ -31,11 +31,14 @@ let descriptions = ["Github is a cloud based repository that helps developers st
 Desc.innerText = descriptions[n1num]
 Scree.innerText = titles[n1num]
 
+
 ScreenButton.addEventListener("click", function(){
-    scimage = '/images/' + screens[n1num] + '.jpg'
+    scimage = '../images/' + screens[n1num] + '.jpg'
     Scree.style.backgroundImage = `url(${scimage})`
     Scree.href = links[n1num]
     Desc.innerText = descriptions[n1num]
+    Scree.innerText = titles[n1num]
+
     UpClick()
 
 
@@ -73,15 +76,18 @@ function UpClick(){
     n2num++
     n3num++
     n4num++
-    sc1image = '/images/' + screens[n1num] + '.jpg'
-    sc2image = '/images/' + screens[n2num] + '.jpg'
-    sc3image = '/images/' + screens[n3num] + '.jpg'
+    sc1image = '../images/' + screens[n1num] + '.jpg'
+    sc2image = '../images/' + screens[n2num] + '.jpg'
+    sc3image = '../images/' + screens[n3num] + '.jpg'
 
 
 
     Screen1.style.backgroundImage = `url(${sc1image})`
     Screen2.style.backgroundImage = `url(${sc2image})`
     Screen3.style.backgroundImage = `url(${sc3image})`
+    Screen1.innerText = titles[n1num]
+    Screen2.innerText = titles[n2num]
+    Screen3.innerText = titles[n3num]
 
 
 
@@ -125,6 +131,9 @@ Down.addEventListener("click", function(){
     Screen1.style.backgroundImage = `url(${sc1image})`
     Screen2.style.backgroundImage = `url(${sc2image})`
     Screen3.style.backgroundImage = `url(${sc3image})`
+    Screen1.innerText = titles[n1num]
+    Screen2.innerText = titles[n2num]
+    Screen3.innerText = titles[n3num]
 
 
 

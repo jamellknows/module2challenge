@@ -10,7 +10,7 @@ body {
   padding: 0 0vw 0vw 0vw;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   line-height: 1.5;
-  background-image: url("/images/blacktabletop.jpeg");
+  background-image: url("../images/blacktabletop.jpeg");
   background-repeat: none;
   background-size: cover;
   overflow: scroll;
