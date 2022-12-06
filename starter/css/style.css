@@ -9,7 +9,7 @@ body {
   font-family: 'IBM Plex Sans', sans-serif;
   line-height: 1.5;
   overflow-x: hidden;
-  background: url("../images/laptop.jpeg");
+  background-image: url("../images/02-portfolio-2.jpg");
   background-repeat: none;
   background-size: cover;
 }
@@ -21,9 +21,9 @@ body {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10.9px);
   -webkit-backdrop-filter: blur(10.9px);
-  border: 1px solid rgba(214, 217, 237, 1);
+  border: 1px solid rgb(10, 19, 77);
   opacity: 0.8;
-  margin: 10vh -5vw -10vh 0vw;
+  margin: 10vh -5vw -10vh 2vw;
 }
 
 h1,
@@ -44,6 +44,7 @@ header{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+
 }
 header > h1 {
   display: flex;
@@ -51,6 +52,8 @@ header > h1 {
   margin: 2vh 0vh 0vh 25vw;
   font-family: 'IBM Plex Sans', sans-serif;
   color: rgba(214, 217, 237, 1);
+  font-size: 4rem;
+  font-weight: 100;
 }
 
 header > nav {
@@ -80,12 +83,12 @@ header > nav > ul > li {
   padding: 0vw 0vw 0vw 0vw;
   width: 100%;
   /* From https://css.glass */
-background: rgba(185, 55, 179, 0.54);
+/* background: rgba(185, 55, 179, 0.54);
 border-radius: 50px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(15.3px);
 -webkit-backdrop-filter: blur(15.3px);
-border: 0.5vh solid rgba(185, 55, 179, 0.3);
+border: 0.5vh solid rgba(185, 55, 179, 0.3); */
 }
 
 .hero-banner > div > h2 {
@@ -94,39 +97,45 @@ border: 0.5vh solid rgba(185, 55, 179, 0.3);
   top: 1vh;
   font-family: 'IBM Plex Sans', sans-serif;
   color: rgba(214, 217, 237, 1);
+  font-size: 6vh;
+  text-shadow: 12rem;
+  border: 2px solid white;
+  border-radius: 1rem;
 
   
 }
 
 #about{
-  margin: 0vw 5vw 0vw 7.75vw;
-  display: grid;
+  margin: 0vw 0vw 0vw 0vw;
+  display: inline-grid;
   grid-template-columns: 30vw 30vw 30vw;
-  grid-template-rows: 1fr 1fr 1fr ;
+  grid-template-rows: 10vh 10vh 10vh ;
   grid-template-areas: 
   "First Fifth Fourth"
   "Third Second Sixth"
   ;
-  column-gap: 2vw;
-  row-gap: 2vh;
+  column-gap: 8vw;
+  row-gap: 8vh;
 
 }
 
 #about > h2 {
   font-family: 'IBM Plex Sans', sans-serif;
   color: rgba(17, 35, 153, 0.918);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 8vh;
 
 
 
 }
 
-#about > p {
+/* #about > p {
   font-family: 'IBM Plex Sans', sans-serif;
   color: rgba(214, 217, 237, 1);
+} */
 
-
-
-}
 #First{
   grid-area: First;
   grid-column-start: 1;
@@ -142,6 +151,8 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5px);
 -webkit-backdrop-filter: blur(5px);
 border: 1px solid rgba(255, 255, 255, 0.3);
+display:inline-block;
+
 }
 #Second{
   grid-area: Second;
@@ -156,6 +167,9 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5px);
 -webkit-backdrop-filter: blur(5px);
 border: 1px solid rgba(63, 123, 171, 0.7);
+display:inline-block;
+height: fit-content;
+
 
 }
 
@@ -172,6 +186,11 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5px);
 -webkit-backdrop-filter: blur(5px);
 border: 1px solid rgba(68, 28, 67, 0.7);
+display:inline-block;
+height: fit-content;
+font-size: 3vh;
+height: fit-content;
+
 }
 
 #Fourth{
@@ -187,6 +206,10 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5px);
 -webkit-backdrop-filter: blur(5px);
 border: 1px solid rgba(37, 144, 28, 0.7);
+display:inline-block;
+font-size: 3vh;
+height: fit-content;
+
 
 }
 #Fifth{
@@ -202,6 +225,12 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5px);
 -webkit-backdrop-filter: blur(5px);
 border: 1px solid rgba(226, 42, 185, 0.7);
+display:inline-block;
+font-size: 3vh;
+height: fit-content;
+
+
+
 
 }
 
@@ -219,6 +248,8 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5px);
 -webkit-backdrop-filter: blur(5px);
 border: 1px solid rgba(220, 12, 12, 0.7);
+display:inline-block;
+font-size: 3vh;
 
 
 }
@@ -230,10 +261,10 @@ border: 1px solid rgba(220, 12, 12, 0.7);
   grid-template-columns: 30vw 30vw 30vw ;
   grid-template-rows: 20vh 20vh 20vh 20vh ;
   grid-template-areas: 
-  "Title Title Next1"
+  "Title Title Title"
+  "Screen Screen Next1"
   "Screen Screen Next2"
   "Screen Screen Next3"
-  "Screen Screen Next4"
   ;
 }
 
@@ -254,19 +285,21 @@ border: 1px solid rgba(220, 12, 12, 0.7);
 
 #work > #Screen {
   grid-area: Screen;
-  background-color: blueviolet;
   border-radius: -5vh;
   border: 5px dashed rgba(159, 186, 72, 0.7);
-  background-image: url;
+  background-size: cover;
 }
 
-#work > #Screen > .arr{
-  width: 50px;
-  height: 50px;
-  border: 5em solid green;
+
+#work > .arr{
+  width: 20vw;
+  height: 5vh;
+  border: 5em solid red;
   border: 5em;
-  position: relative;
-  margin: 55vh 0vw 0vh 28vw;
+  border-radius: 2em;
+  display: inline-block;
+  margin: 0vh 0vh 0ch 18vw;
+ 
 }
 
 #work > #Next1 {
@@ -274,15 +307,27 @@ border: 1px solid rgba(220, 12, 12, 0.7);
   background-color: green;
   border-radius: 5vh;
   border: 5px dashed rgba(159, 186, 72, 0.7);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
 
 }
 
+#work > #Next1 > #up{
+  height: 5vh;
+  width: 5vw;
+  margin: -2vh 0vw 0vh 0vw ;
+  border: 2px solid red;
+  border-radius: 5em;
+
+}
 
 #work > #Next2 {
   grid-area: Next2;
   background-color: blanchedalmond;
   border-radius: 5vh;
   border: 5px dashed rgba(159, 186, 72, 0.7);
+  background-size: cover;
 
 }
 #work > #Next3{
@@ -290,13 +335,17 @@ border: 1px solid rgba(220, 12, 12, 0.7);
   background-color: aquamarine;
   border-radius: 5vh;
   border: 5px dashed rgba(159, 186, 72, 0.7);
+  background-size: cover;
+
 }
 
-#work > #Next4 {
-  grid-area: Next4;
-  background-color: brown;
-  border-radius: 5vh;
-  border: 5px dashed rgba(159, 186, 72, 0.7);
+
+
+#work > #Next3 > #down {
+  margin: 17vh 0px 0px 11vw;  
+  border: 2px solid red;
+  border-radius: 5em;
+
 }
 
 #work > article {
@@ -304,7 +353,7 @@ border: 1px solid rgba(220, 12, 12, 0.7);
   
 }
 
-#work > 
+
 
 #work > article > a {
   
@@ -321,7 +370,6 @@ border: 1px solid rgba(220, 12, 12, 0.7);
   align-items:flex-end;
   font-family: 'IBM Plex Sans', sans-serif;
 
-  
   
 }
 
