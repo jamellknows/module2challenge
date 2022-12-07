@@ -19,6 +19,7 @@ A portfolio of work can showcase your skills and talents to employers looking to
 ## Usage 
 
 THis is the second module challenge and is to be used as a portfolio website 
+https://jamellknows.github.io/module2challenge
 
 * Mobile Screen
 
