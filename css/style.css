@@ -233,6 +233,7 @@ padding: 0vh 5vw 0vh 5vw;
   text-shadow: 2px 2px #fff;
   height: max-content;
   margin-top: 5vh;
+  font-size: 1.3vh;
 }
 
 
@@ -243,7 +244,12 @@ padding: 0vh 5vw 0vh 5vw;
   border: 5px dashed rgba(159, 186, 72, 0.7);
   background-size: cover;
 }
+#work > #Screen {
+  color: rgba(188, 122, 17, 0.613);
+  text-decoration: none;
+  font-size: 4em;
 
+}
 
 #work > .arr{
   width: 20vw;
@@ -255,6 +261,7 @@ padding: 0vh 5vw 0vh 5vw;
   margin: 0vh 0vh 0ch 18vw;
  
 }
+
 
 #work > #Next1 {
   grid-area: Next1;
@@ -282,6 +289,8 @@ padding: 0vh 5vw 0vh 5vw;
   border-radius: 5vh;
   border: 5px dashed rgba(159, 186, 72, 0.7);
   background-size: cover;
+  display: flex;
+  justify-content: center;
 
 }
 #work > #Next3{
@@ -290,6 +299,8 @@ padding: 0vh 5vw 0vh 5vw;
   border-radius: 5vh;
   border: 5px dashed rgba(159, 186, 72, 0.7);
   background-size: cover;
+  display: flex;
+  justify-content: center;
 
 }
 
@@ -623,8 +634,9 @@ body::-webkit-scrollbar-thumb {
   }
 
   #work > #Next1 > #up{
-    margin-top: -1vh;
+    margin-top: -2vh;
     width: 15vw;
+    height: fit-content;
   }
   #work > #Next3 > #down {
    width: 15vw;

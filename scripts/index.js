@@ -85,9 +85,7 @@ function UpClick(){
     Screen1.style.backgroundImage = `url(${sc1image})`
     Screen2.style.backgroundImage = `url(${sc2image})`
     Screen3.style.backgroundImage = `url(${sc3image})`
-    Screen1.innerText = titles[n1num]
-    Screen2.innerText = titles[n2num]
-    Screen3.innerText = titles[n3num]
+
 
 
 
@@ -131,9 +129,7 @@ Down.addEventListener("click", function(){
     Screen1.style.backgroundImage = `url(${sc1image})`
     Screen2.style.backgroundImage = `url(${sc2image})`
     Screen3.style.backgroundImage = `url(${sc3image})`
-    Screen1.innerText = titles[n1num]
-    Screen2.innerText = titles[n2num]
-    Screen3.innerText = titles[n3num]
+   
 
 
 
