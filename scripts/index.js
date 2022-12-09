@@ -33,7 +33,7 @@ Scree.innerText = titles[n1num]
 
 
 ScreenButton.addEventListener("click", function(){
-    scimage = '../images/' + screens[n1num] + '.jpg'
+    scimage = './images/' + screens[n1num] + '.jpg'
     Scree.style.backgroundImage = `url(${scimage})`
     Scree.href = links[n1num]
     Desc.innerText = descriptions[n1num]
