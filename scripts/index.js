@@ -4,7 +4,7 @@ let ScreenButton = document.getElementById("Next")
 let screens = ["Next1", "Next2", "Next3", "Next4", "Next5"]
 let links = ["https://www.github.com/jamellknows", "https://jamellknows.github.io", "https://jamellknows.github.io/module1challenge",
  "https://www.cii.systems/", "https://www.milleniumprizesolutions.com/"]
- let titles = ["Github Repository", "Github Page", "Module Challenge", "CII Systems", "Millennium Prize Solutions"]
+let titles = ["Github Repository", "Github Page", "Module Challenge", "CII Systems", "Millennium Prize Solutions"]
 let Up = document.getElementById("up")
 let Down = document.getElementById("down")
 let Screen1 = document.getElementById("Next1")
